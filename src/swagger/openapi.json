@@ -1,0 +1,118 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Nimbus API",
+    "version": "1.0.0",
+    "description": "Cloud-native bookstore API"
+  },
+  "servers": [
+    { "url": "/api/v1", "description": "v1 API" },
+    { "url": "/api", "description": "Legacy API" }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "summary": "Register a user",
+        "security": [],
+        "responses": {
+          "201": { "description": "Created" }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "Login",
+        "security": [],
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      }
+    },
+    "/books": {
+      "get": {
+        "summary": "List books",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      },
+      "post": {
+        "summary": "Add a book",
+        "responses": {
+          "201": { "description": "Created" }
+        }
+      }
+    },
+    "/books/{id}": {
+      "get": {
+        "summary": "Get a book",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      },
+      "put": {
+        "summary": "Update a book",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      },
+      "delete": {
+        "summary": "Delete a book",
+        "responses": {
+          "204": { "description": "Deleted" }
+        }
+      }
+    },
+    "/orders": {
+      "get": {
+        "summary": "List orders (admin)",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      },
+      "post": {
+        "summary": "Create an order",
+        "responses": {
+          "201": { "description": "Created" }
+        }
+      }
+    },
+    "/orders/{id}": {
+      "get": {
+        "summary": "Get an order",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      }
+    },
+    "/admin/metrics": {
+      "get": {
+        "summary": "Admin metrics",
+        "responses": {
+          "200": { "description": "Success" }
+        }
+      }
+    },
+    "/webhooks/book-published": {
+      "post": {
+        "summary": "Webhook for newly published book",
+        "responses": {
+          "202": { "description": "Accepted" }
+        }
+      }
+    }
+  }
+}

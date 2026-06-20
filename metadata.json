@@ -1,0 +1,6 @@
+{
+  "name": "Nimbus API",
+  "description": "Cloud-native bookstore API built with Node.js, Express, and TypeScript. Features JWT auth, role-based access, advanced querying, HATEOAS pagination, ETags, webhook simulation, Swagger docs, and in-memory data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
