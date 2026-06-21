@@ -105,7 +105,7 @@ npm run dev
 
 📸 Screenshot
 
-Copilot_20260621_030349.png
+https://copilot.microsoft.com/th/id/BCO.24e74dee-7b17-416f-b28c-cf0124ed9056.png
 
 📜 License
 
