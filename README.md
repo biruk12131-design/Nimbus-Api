@@ -1,9 +1,3 @@
-
----
-
-### 📄  Nimbus API (AWS Serverless API)
-
-```markdown
 # Nimbus API
 
 ![Node.js](https://img.shields.io/badge/Node.js-20-green?logo=node.js)
@@ -52,39 +46,69 @@ Interactive Swagger UI: [https://nimbus-api.onrender.com/api-docs](https://nimbu
 
 ## 📁 Project Structure
 
-src/
-├── middleware/
-│   ├── auth.ts
-│   ├── errorHandler.ts
-│   ├── logger.ts
-│   ├── rateLimiter.ts
-│   └── validate.ts
-├── routes/
-│   ├── auth.ts
-│   └── books.ts
-├── models/
-│   └── Book.ts
-├── data/
-│   └── seed.ts
-├── swagger/
-│   └── openapi.json
-├── index.ts
-└── serverless.ts
+
+```
+Freelancer-pro-hub/
+├── src/
+│   ├── components/               # Reusable components
+│   │   ├── ui/                   # Base UI components
+│   │   │   ├── button.tsx        # Styled button component
+│   │   │   ├── card.tsx          # Card container component
+│   │   │   ├── input.tsx         # Form input component
+│   │   │   ├── modal.tsx         # Modal dialog component
+│   │   │   └── skeleton.tsx      # Loading skeleton component
+│   │   ├── charts/               # Chart components
+│   │   │   ├── MonthlyEarningsChart.tsx  # Line chart for earnings
+│   │   │   └── WeeklyHoursChart.tsx      # Bar chart for hours
+│   │   ├── dashboard/            # Dashboard-specific components
+│   │   │   ├── StatsDisplay.tsx  # KPI cards display
+│   │   │   └── RecentActivity.tsx # Activity feed
+│   │   ├── Header.tsx            # Top navigation header
+│   │   ├── Layout.tsx            # Main layout wrapper
+│   │   └── Sidebar.tsx           # Navigation sidebar
+│   ├── pages/                    # Page components
+│   │   ├── Dashboard.tsx         # Main dashboard view
+│   │   ├── Clients.tsx           # Client management page
+│   │   ├── Projects.tsx          # Project tracking page
+│   │   ├── Invoices.tsx          # Invoice management page
+│   │   ├── TimeTracking.tsx      # Time tracking page
+│   │   └── Settings.tsx          # Settings/profile page
+│   ├── contexts/                 # React Context providers
+│   │   ├── ThemeContext.tsx      # Dark/light mode context
+│   │   ├── ToastContext.tsx      # Toast notification context
+│   │   └── DataStoreContext.tsx  # Global data management context
+│   ├── lib/                      # Utility functions & helpers
+│   │   ├── mockData.ts           # Static mock data for all features
+│   │   ├── csvUtils.ts           # CSV export utilities
+│   │   ├── pdfUtils.ts           # PDF export utilities
+│   │   └── utils.ts              # General utility functions
+│   ├── App.tsx                   # Main app component
+│   ├── main.tsx                  # Application entry point
+│   └── index.css                 # Global styles
+├── public/                       # Static assets
+├── .env.example                  # Environment variables template
+├── index.html                    # HTML entry point
+├── package.json                  # Dependencies & scripts
+├── tsconfig.json                 # TypeScript configuration
+├── vite.config.ts                # Vite configuration
+└── metadata.json                 # Project metadata
+```
 
 
 ## 🚦 Getting Started
 ```bash
-git clone https://github.com/biruk12131-design/Nimbus-Api
+git clone https://github.com/birukdev12-senior/nimbus-api.git
 cd nimbus-api
 npm install
 npm run dev
 
-API runs at http://localhost:3000.
 
 📸 Screenshot
 
-Copilot_20260621_030349
+Copilot_20260621_030349.png
 
 📜 License
 
 MIT License.
+
+
