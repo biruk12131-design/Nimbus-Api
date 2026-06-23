@@ -95,6 +95,10 @@ Freelancer-pro-hub/
 ```
 
 
+📸 Screenshot
+![Nimbus-api Screenshot](Copilot_20260621_030349.png)
+
+
 ## 🚦 Getting Started
 ```bash
 git clone https://github.com/birukdev12-senior/nimbus-api.git
@@ -102,9 +106,6 @@ cd nimbus-api
 npm install
 npm run dev
 
-
-📸 Screenshot
-![Nimbus-api Screenshot](Copilot_20260621_030349.png)
 
 
 📜 License
